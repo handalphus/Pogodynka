@@ -1,0 +1,50 @@
+<?xml version="1.0" encoding="utf-8"?>
+<resources>
+
+    <style name="numericFields" >
+        <item name="android:textSize">50dp</item>
+        <item name="android:layout_width">250dp</item>
+        <item name="android:layout_height">60dp</item>
+        <item name="android:textAlignment">3</item>
+    </style>
+
+    <style name="description">
+        <item name="android:textSize">30dp</item>
+        <item name="android:layout_width">250dp</item>
+        <item name="android:layout_height">100dp</item>
+        <item name="textAllCaps">true</item>
+        <item name="android:padding">5dp</item>
+    </style>
+    <style name="help">
+        <item name="android:textSize">20dp</item>
+        <item name="android:layout_width">250dp</item>
+        <item name="android:layout_height">25dp</item>
+        <item name="textAllCaps">true</item>
+        <item name="android:textAlignment">center</item>
+    </style>
+
+    <style name="city">
+        <item name="android:textSize">40dp</item>
+        <item name="android:layout_width">350dp</item>
+        <item name="android:layout_height">70dp</item>
+        <item name="android:layout_margin">5dp</item>
+    </style>
+
+    <style name="icons">
+        <item name="android:layout_width">60dp</item>
+        <item name="android:layout_height">60dp</item>
+    </style>
+
+    <style name="numericFieldsJunior">
+        <item name="android:textSize">17dp</item>
+        <item name="android:gravity">center</item>
+
+    </style>
+
+    <style name="iconsJunior"></style>
+
+    <style name="temperatureFieldJunior">
+        <item name="android:textSize">30dp</item>
+        <item name="android:gravity">center</item>
+    </style>
+</resources>

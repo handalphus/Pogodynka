@@ -1,0 +1,360 @@
+<?xml version="1.0" encoding="utf-8"?>
+<androidx.constraintlayout.widget.ConstraintLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    tools:context=".SecondFragment"
+    android:background="@color/design_default_color_surface">
+
+
+    <com.google.android.material.card.MaterialCardView
+        android:id="@+id/cardTitleJunior"
+        android:layout_width="350dp"
+        android:layout_height="wrap_content"
+
+        android:layout_marginHorizontal="30dp"
+        android:layout_marginVertical="30dp"
+        app:layout_constraintEnd_toEndOf="parent"
+        app:layout_constraintStart_toStartOf="parent"
+        app:layout_constraintTop_toTopOf="parent">
+
+        <androidx.constraintlayout.widget.ConstraintLayout
+            android:layout_width="match_parent"
+            android:layout_height="match_parent"
+            android:background="#99d066">
+
+            <TextView
+                android:id="@+id/textViewCityJunior"
+                style="@style/city"
+
+                android:layout_marginTop="4dp"
+                android:text="TextView"
+                app:layout_constraintHorizontal_bias="0.0"
+                app:layout_constraintEnd_toEndOf="parent"
+                app:layout_constraintStart_toStartOf="parent"
+                app:layout_constraintTop_toTopOf="parent" />
+
+            <ImageView
+                android:id="@+id/imageViewWeatherIconJunior"
+                android:layout_width="100dp"
+                android:layout_height="100dp"
+
+
+                app:layout_constraintBottom_toBottomOf="parent"
+                app:layout_constraintEnd_toEndOf="parent"
+                app:layout_constraintStart_toEndOf="@+id/textViewDescriptionJunior" />
+
+            <TextView
+                android:id="@+id/textViewDescriptionJunior"
+                style="@style/description"
+
+                android:text="TextView"
+                app:layout_constraintEnd_toStartOf="@+id/imageViewWeatherIconJunior"
+                app:layout_constraintStart_toStartOf="parent"
+                app:layout_constraintTop_toBottomOf="@+id/textViewCityJunior" />
+
+        </androidx.constraintlayout.widget.ConstraintLayout>
+    </com.google.android.material.card.MaterialCardView>
+
+
+    <com.google.android.material.card.MaterialCardView
+        android:id="@+id/cardHumidityJunior"
+        android:layout_width="114dp"
+        android:layout_height="159dp"
+
+        android:layout_marginStart="4dp"
+        android:layout_marginTop="13dp"
+        app:layout_constraintStart_toEndOf="@+id/cardPressureJunior"
+        app:layout_constraintTop_toBottomOf="@+id/cardTemperatureJuniorBig">
+
+        <androidx.constraintlayout.widget.ConstraintLayout
+            android:layout_width="match_parent"
+            android:layout_height="match_parent">
+
+            <ImageView
+                android:id="@+id/imageViewJunior"
+                style="@style/iconsJunior"
+                android:layout_width="70dp"
+                android:layout_height="70dp"
+                android:layout_marginTop="16dp"
+                android:src="@drawable/ic_hygrometer_595b40b65ba036ed117d4723"
+                app:layout_constraintEnd_toEndOf="parent"
+                app:layout_constraintStart_toStartOf="parent"
+                app:layout_constraintTop_toTopOf="parent" />
+
+            <TextView
+                android:id="@+id/textViewHumidityJunior"
+                style="@style/numericFieldsJunior"
+
+                android:layout_width="70dp"
+                android:layout_height="45dp"
+                android:layout_marginBottom="16dp"
+                android:text="TextView"
+                app:layout_constraintBottom_toBottomOf="parent"
+                app:layout_constraintEnd_toEndOf="parent"
+                app:layout_constraintStart_toStartOf="parent" />
+
+
+        </androidx.constraintlayout.widget.ConstraintLayout>
+    </com.google.android.material.card.MaterialCardView>
+
+    <com.google.android.material.card.MaterialCardView
+        android:id="@+id/cardPressureJunior"
+        android:layout_width="114dp"
+        android:layout_height="159dp"
+
+        android:layout_marginStart="25dp"
+        android:layout_marginTop="13dp"
+        app:layout_constraintStart_toStartOf="parent"
+        app:layout_constraintTop_toBottomOf="@+id/cardTemperatureJuniorBig">
+
+        <androidx.constraintlayout.widget.ConstraintLayout
+            android:layout_width="match_parent"
+            android:layout_height="match_parent">
+
+            <ImageView
+                android:id="@+id/imageViewPressureJunior"
+                style="@style/iconsJunior"
+                android:layout_width="70dp"
+                android:layout_height="70dp"
+                android:layout_marginTop="16dp"
+                android:src="@drawable/ic_atmospheric_pressure_595b40b75ba036ed117d9116"
+                app:layout_constraintEnd_toEndOf="parent"
+                app:layout_constraintStart_toStartOf="parent"
+                app:layout_constraintTop_toTopOf="parent" />
+
+            <TextView
+                android:id="@+id/textViewPressureJunior"
+                style="@style/numericFieldsJunior"
+
+                android:layout_width="70dp"
+                android:layout_height="45dp"
+                android:layout_marginBottom="16dp"
+                android:text="TextView"
+                app:layout_constraintBottom_toBottomOf="parent"
+                app:layout_constraintEnd_toEndOf="parent"
+                app:layout_constraintStart_toStartOf="parent" />
+
+
+        </androidx.constraintlayout.widget.ConstraintLayout>
+    </com.google.android.material.card.MaterialCardView>
+
+    <com.google.android.material.card.MaterialCardView
+        android:id="@+id/cardWindJunior"
+        android:layout_width="114dp"
+        android:layout_height="159dp"
+
+        android:layout_marginStart="5dp"
+        android:layout_marginTop="13dp"
+        app:layout_constraintStart_toEndOf="@+id/cardHumidityJunior"
+        app:layout_constraintTop_toBottomOf="@+id/cardTemperatureJuniorBig">
+
+        <androidx.constraintlayout.widget.ConstraintLayout
+            android:layout_width="match_parent"
+            android:layout_height="match_parent">
+
+            <ImageView
+                android:id="@+id/imageViewWindJunior"
+                style="@style/iconsJunior"
+                android:layout_width="70dp"
+                android:layout_height="70dp"
+                android:layout_marginTop="16dp"
+                android:src="@drawable/ic_windy_weather_595b40b65ba036ed117d27a2"
+                app:layout_constraintEnd_toEndOf="parent"
+                app:layout_constraintStart_toStartOf="parent"
+                app:layout_constraintTop_toTopOf="parent" />
+
+            <TextView
+                android:id="@+id/textViewWindJunior"
+                style="@style/numericFieldsJunior"
+
+                android:layout_width="70dp"
+                android:layout_height="45dp"
+                android:layout_marginBottom="16dp"
+                android:text="TextView"
+                app:layout_constraintBottom_toBottomOf="parent"
+                app:layout_constraintEnd_toEndOf="parent"
+                app:layout_constraintStart_toStartOf="parent" />
+
+
+        </androidx.constraintlayout.widget.ConstraintLayout>
+    </com.google.android.material.card.MaterialCardView>
+
+
+    <com.google.android.material.card.MaterialCardView
+        android:id="@+id/cardSunriseJunior"
+        android:layout_width="114dp"
+        android:layout_height="159dp"
+        android:layout_marginStart="25dp"
+        android:layout_marginTop="13dp"
+        app:layout_constraintStart_toStartOf="parent"
+        app:layout_constraintTop_toBottomOf="@+id/cardPressureJunior">
+
+        <androidx.constraintlayout.widget.ConstraintLayout
+            android:layout_width="match_parent"
+            android:layout_height="match_parent">
+
+            <ImageView
+                android:id="@+id/imageViewSunriseJunior"
+                style="@style/iconsJunior"
+                android:layout_width="70dp"
+                android:layout_height="70dp"
+                android:layout_marginTop="16dp"
+                android:src="@drawable/ic_sunrise_595b40b85ba036ed117dc7cc"
+                app:layout_constraintEnd_toEndOf="parent"
+                app:layout_constraintStart_toStartOf="parent"
+                app:layout_constraintTop_toTopOf="parent" />
+
+            <TextView
+                android:id="@+id/textViewSunriseJunior"
+                style="@style/numericFieldsJunior"
+
+                android:layout_width="70dp"
+                android:layout_height="45dp"
+                android:layout_marginBottom="16dp"
+                android:text="TextView"
+                app:layout_constraintBottom_toBottomOf="parent"
+                app:layout_constraintEnd_toEndOf="parent"
+                app:layout_constraintStart_toStartOf="parent" />
+
+
+        </androidx.constraintlayout.widget.ConstraintLayout>
+    </com.google.android.material.card.MaterialCardView>
+
+    <com.google.android.material.card.MaterialCardView
+        android:id="@+id/cardSunsetJunior"
+        android:layout_width="114dp"
+        android:layout_height="159dp"
+
+        android:layout_marginStart="4dp"
+        android:layout_marginTop="13dp"
+        app:layout_constraintStart_toEndOf="@+id/cardSunriseJunior"
+        app:layout_constraintTop_toBottomOf="@+id/cardHumidityJunior">
+
+        <androidx.constraintlayout.widget.ConstraintLayout
+            android:layout_width="match_parent"
+            android:layout_height="match_parent">
+
+            <ImageView
+                android:id="@+id/imageViewSunsetJunior"
+                style="@style/iconsJunior"
+                android:layout_width="70dp"
+                android:layout_height="70dp"
+                android:layout_marginTop="16dp"
+                android:src="@drawable/ic_sunset_595b40b85ba036ed117dbbaa"
+                app:layout_constraintEnd_toEndOf="parent"
+                app:layout_constraintStart_toStartOf="parent"
+                app:layout_constraintTop_toTopOf="parent" />
+
+            <TextView
+                android:id="@+id/textViewSunsetJunior"
+                style="@style/numericFieldsJunior"
+
+                android:layout_width="70dp"
+                android:layout_height="45dp"
+                android:layout_marginBottom="16dp"
+                android:text="TextView"
+                app:layout_constraintBottom_toBottomOf="parent"
+                app:layout_constraintEnd_toEndOf="parent"
+                app:layout_constraintStart_toStartOf="parent" />
+
+
+        </androidx.constraintlayout.widget.ConstraintLayout>
+    </com.google.android.material.card.MaterialCardView>
+
+    <com.google.android.material.card.MaterialCardView
+        android:id="@+id/cardCloudineessJunior"
+        android:layout_width="114dp"
+        android:layout_height="159dp"
+        android:layout_marginLeft="5dp"
+        android:layout_marginTop="13dp"
+        app:layout_constraintStart_toEndOf="@+id/cardSunsetJunior"
+        app:layout_constraintTop_toBottomOf="@+id/cardWindJunior">
+
+        <androidx.constraintlayout.widget.ConstraintLayout
+            android:layout_width="match_parent"
+            android:layout_height="match_parent">
+
+            <ImageView
+                android:id="@+id/imageViewCloudinessJunior"
+                style="@style/iconsJunior"
+                android:layout_width="70dp"
+                android:layout_height="70dp"
+                android:layout_marginTop="16dp"
+                android:src="@drawable/ic_clouds_595b40b65ba036ed117d19db"
+                app:layout_constraintEnd_toEndOf="parent"
+                app:layout_constraintStart_toStartOf="parent"
+                app:layout_constraintTop_toTopOf="parent" />
+
+            <TextView
+                android:id="@+id/textViewCloudinessJunior"
+                style="@style/numericFieldsJunior"
+
+                android:layout_width="70dp"
+                android:layout_height="45dp"
+                android:layout_marginBottom="16dp"
+                android:text="TextView"
+                app:layout_constraintBottom_toBottomOf="parent"
+                app:layout_constraintEnd_toEndOf="parent"
+                app:layout_constraintStart_toStartOf="parent" />
+
+
+        </androidx.constraintlayout.widget.ConstraintLayout>
+    </com.google.android.material.card.MaterialCardView>
+
+
+    <Button
+        android:id="@+id/buttonToSenior"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_marginEnd="30dp"
+        android:layout_marginBottom="20dp"
+        android:textSize="20dp"
+        android:text="Bigger icons"
+        app:layout_constraintBottom_toBottomOf="parent"
+        app:layout_constraintEnd_toEndOf="parent" />
+
+    <com.google.android.material.card.MaterialCardView
+        android:id="@+id/cardTemperatureJuniorBig"
+        android:layout_width="250dp"
+        android:layout_height="100dp"
+        android:layout_marginTop="13dp"
+        app:layout_constraintEnd_toEndOf="parent"
+        app:layout_constraintStart_toStartOf="parent"
+        app:layout_constraintTop_toBottomOf="@+id/cardTitleJunior">
+
+        <androidx.constraintlayout.widget.ConstraintLayout
+            android:layout_width="match_parent"
+            android:layout_height="match_parent">
+
+            <ImageView
+                android:id="@+id/imageViewTemperatureJuniorBig"
+                style="@style/iconsJunior"
+                android:layout_width="100dp"
+                android:layout_height="100dp"
+
+                android:src="@drawable/ic_temperature_595b40b75ba036ed117d7777"
+                app:layout_constraintStart_toStartOf="parent"
+                app:layout_constraintTop_toTopOf="parent" />
+
+            <TextView
+                android:id="@+id/textViewTemperatureJuniorBig"
+                style="@style/temperatureFieldJunior"
+
+                android:layout_width="150dp"
+                android:layout_height="100dp"
+                android:text="TextView"
+                app:layout_constraintEnd_toEndOf="parent"
+
+
+                app:layout_constraintTop_toTopOf="parent" />
+
+
+        </androidx.constraintlayout.widget.ConstraintLayout>
+    </com.google.android.material.card.MaterialCardView>
+
+
+
+
+</androidx.constraintlayout.widget.ConstraintLayout>
